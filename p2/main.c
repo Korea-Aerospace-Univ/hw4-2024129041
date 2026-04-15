@@ -12,7 +12,7 @@ int main(void)
             ++engcount;
             if (engcount > max_engcount) max_engcount = engcount;
         }
-        else {
+        else if (ch >= '0' && ch <= '9') {
             engcount = 0;
             ++intcount;
             if (intcount > max_intcount) max_intcount = intcount;
