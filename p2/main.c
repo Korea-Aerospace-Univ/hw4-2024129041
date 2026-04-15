@@ -13,8 +13,8 @@ int main(void)
         이때 for문 위의 scanf로 인해서 for문 아래 scanf는 개행문자를 받기 때문에 이를 무시하기 위해서
         for문 아래 scanf괄호""안에 띄어쓰기로 시작해서 이를 무시*/
         if (ch >= 'a' && ch <= 'z') {//받은 ch값이 'a'와 'z'사이에 존재한다면 ch는 영어 소문자
-            intcount = 0;//for문안에서 계속 반복되기때문에, 지금 영어 소문자 다음에 정수문자가 오는 경우 다음 정수문자의 연속된 개수를
-            세기 위해 이전의 연속된 정수개수를 0으로 초기화해주는 작업
+            intcount = 0;/*for문안에서 계속 반복되기때문에, 지금 영어 소문자 다음에 정수문자가 오는 경우
+            다음 정수문자의 연속된 개수를 세기 위해 이전의 연속된 정수개수를 0으로 초기화해주는 작업*/
             ++engcount;//연속된 소문자 개수를 세기위한 코드
             if (engcount > max_engcount) max_engcount = engcount;/*연속된 영어 소문자 개수를 세고 이를 영어 소문자 최대개수와
             비교해서 이전에 저장된 최대개수max_engcount 보다 클때만 현재까지 센 영어 소문자 개수를 최대 개수를 바꿔서 저장하는 코드*/
@@ -28,6 +28,6 @@ int main(void)
         }
     }
     printf("%d\n", max_engcount);//연속된 영어 소문자의 최대개수를 저장한 변수 max_engcount 출력, 개행
-    printf("%d", max_intcount);//연속된 정수의 최대개수를 저장한 변수 max_intcount 출력
+    printf("%d", max_intcount);//연속된 정수문자의 최대개수를 저장한 변수 max_intcount 출력
     return 0;//종료
 }
