@@ -19,6 +19,6 @@ int main(void)
         }
     }
     printf("%d\n", max_engcount);
-    printf("%d", max_intcount);
+    printf("%d\n", max_intcount);
     return 0;
 }
