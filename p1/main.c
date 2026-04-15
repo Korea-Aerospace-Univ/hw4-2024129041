@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int main(void)
@@ -8,7 +9,7 @@ int main(void)
         scanf("%d", &answer);
         if(answer > correct) printf("%d>?\n", answer);
         else if(answer < correct) printf("%d<?\n", answer);
-        else printf("%d==%d", answer, correct);
+        else printf("%d==?", answer, correct);
     } while(answer != correct);
     return 0;
 }
